@@ -81,8 +81,12 @@
 				FA39644D26A70F92003D2E46 /* BeTeacherApp.swift */,
 				FA39644F26A70F92003D2E46 /* LessonListView.swift */,
 				FA39645126A70F93003D2E46 /* Assets.xcassets */,
+				FA795E1E26A733BF002C99C7 /* Views */,
 				FA795E0026A7166A002C99C7 /* GoogleService-Info.plist */,
+				FA795E1F26A733C2002C99C7 /* Repository */,
+				FA795E1D26A733B9002C99C7 /* ViewModels */,
 				FA39645626A70F93003D2E46 /* Info.plist */,
+				FA795E1B26A733A1002C99C7 /* Models */,
 				FA39645326A70F93003D2E46 /* Preview Content */,
 			);
 			path = BeTeacher;
@@ -94,6 +98,34 @@
 				FA39645426A70F93003D2E46 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FA795E1B26A733A1002C99C7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA795E1D26A733B9002C99C7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FA795E1E26A733BF002C99C7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FA795E1F26A733C2002C99C7 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

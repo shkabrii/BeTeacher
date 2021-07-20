@@ -16,7 +16,7 @@ struct BeTeacherApp: App {
     }
     var body: some Scene {
         WindowGroup {
-            LessonListView()
+            LessonListView(lessonListViewModel: LessonListViewModel())
         }
     }
 }

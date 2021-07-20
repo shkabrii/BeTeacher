@@ -27,10 +27,10 @@ final class LessonListViewModel: ObservableObject {
     }
     
     func remove(_ lesson: Lesson) {
-        
+        lessonRepository.remove(lesson)
     }
     
     func update(_ lesson: Lesson) {
-        
+        lessonRepository.update(lesson)
     }
 }

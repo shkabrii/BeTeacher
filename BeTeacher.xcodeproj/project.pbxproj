@@ -18,6 +18,7 @@
 		FA795E2726A73465002C99C7 /* LessonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA795E2626A73465002C99C7 /* LessonRepository.swift */; };
 		FA795E2926A7348D002C99C7 /* LessonListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA795E2826A7348D002C99C7 /* LessonListView.swift */; };
 		FA795E2B26A73499002C99C7 /* LessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA795E2A26A73499002C99C7 /* LessonView.swift */; };
+		FA795E2D26A73792002C99C7 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA795E2C26A73792002C99C7 /* FormView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		FA795E2626A73465002C99C7 /* LessonRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonRepository.swift; sourceTree = "<group>"; };
 		FA795E2826A7348D002C99C7 /* LessonListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonListView.swift; sourceTree = "<group>"; };
 		FA795E2A26A73499002C99C7 /* LessonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonView.swift; sourceTree = "<group>"; };
+		FA795E2C26A73792002C99C7 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 			children = (
 				FA795E2826A7348D002C99C7 /* LessonListView.swift */,
 				FA795E2A26A73499002C99C7 /* LessonView.swift */,
+				FA795E2C26A73792002C99C7 /* FormView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA795E2D26A73792002C99C7 /* FormView.swift in Sources */,
 				FA795E2B26A73499002C99C7 /* LessonView.swift in Sources */,
 				FA795E2926A7348D002C99C7 /* LessonListView.swift in Sources */,
 				FA795E2326A73436002C99C7 /* LessonListViewModel.swift in Sources */,

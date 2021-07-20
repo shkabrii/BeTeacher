@@ -14,23 +14,26 @@ struct LessonView: View {
     
     
     var body: some View {
-        RoundedRectangle(cornerRadius: 5)
+        RoundedRectangle(cornerRadius: 6)
             .fill(lessonViewModel.lesson.finished ? Color.green : Color.blue)
-            .frame(height: 120)
+            .frame(height: 160)
             .overlay(
                 ZStack {
                     HStack {
                         Spacer()
                         VStack {
                             Image ( systemName: lessonViewModel.lesson.finished ? "star.fill" : "star")
+                            Spacer()
+                            Text(lessonViewModel.lesson.student)
+                            Spacer()
+                            Text(lessonViewModel.lesson.subject)
+                            Spacer()
+                            Text(lessonViewModel.lesson.date)
+                            Spacer()
+                            Text(lessonViewModel.lesson.duration)
                         }
                         Spacer()
                     }
-                    Text(lessonViewModel.lesson.student)
-                    Spacer()
-                    Text(lessonViewModel.lesson.subject)
-                    Spacer()
-                    Text(lessonViewModel.lesson.price)
                 }.padding()
             )
             .onTapGesture {

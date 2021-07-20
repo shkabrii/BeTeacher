@@ -38,4 +38,23 @@ final class LessonRepository: ObservableObject {
             fatalError("Was not able to add a lesson")
         }
     }
+    
+    
+    func remove(_ lesson: Lesson) {
+        guard let documentId = lesson.id else { return }
+        store.collection(path).document(documentId).delete { error in
+            if let error = error {
+                print("Unable to remove the lesson: \(error.localizedDescription)")
+            }
+        }
+    }
+    
+    func update(_ lesson: Lesson) {
+        guard let documentId = lesson.id else { return }
+        do {
+            try store.collection(path).document(documentId).setData(from: lesson)
+        } catch {
+            fatalError("Was not able to add a lesson")
+        }
+    }
 }

@@ -14,9 +14,10 @@ struct BeTeacherApp: App {
     init() {
         FirebaseApp.configure()
     }
+    
     var body: some Scene {
         WindowGroup {
-            LessonListView(lessonListViewModel: LessonListViewModel())
+            ContentView();
         }
     }
 }

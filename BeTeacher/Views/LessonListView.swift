@@ -34,20 +34,22 @@ struct LessonListView: View {
                 }
                 .listStyle(InsetListStyle())
                 .navigationTitle("Lessons")
-                
-                Button(action: {
-                    showingForm = true
-                }) {
-                    Circle()
-                        .fill(Color.green)
-                        .frame(height: 60)
-                        .overlay(Image(systemName: "plus").foregroundColor(.white))
-                }.sheet(isPresented: $showingForm) {
-                    FormView { (lesson) in
-                        lessonListViewModel.add(lesson)
-                        showingForm = false
+                .navigationBarItems(trailing:
+                    Button(action: {
+                        showingForm = true
+                    }) {
+//                        Circle()
+//                            .fill(Color.green)
+//                            .frame(height: 60)
+//                            .overlay(Image(systemName: "plus").foregroundColor(.white))
+                        Text("Add lesson")
+                    }.sheet(isPresented: $showingForm) {
+                        FormView { (lesson) in
+                            lessonListViewModel.add(lesson)
+                            showingForm = false
+                        }
                     }
-                }
+                )
             }
         }
     }
@@ -55,11 +57,5 @@ struct LessonListView: View {
     private func delete(at offsets: IndexSet) {
         offsets.map { lessonListViewModel.lessonViewModels[$0].lesson
         }.forEach(lessonListViewModel.remove)
-    }
-}
-
-struct LessonListView_Previews: PreviewProvider {
-    static var previews: some View {
-        LessonListView(lessonListViewModel: LessonListViewModel())
     }
 }

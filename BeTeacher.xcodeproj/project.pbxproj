@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		80632569244CAF263BCF1A2D /* Pods_BeTeacher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC21DA15FDCEE3D422189E5 /* Pods_BeTeacher.framework */; };
+		FA34153626A9E58400A6A100 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA34153526A9E58400A6A100 /* ContentView.swift */; };
 		FA39644E26A70F92003D2E46 /* BeTeacherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA39644D26A70F92003D2E46 /* BeTeacherApp.swift */; };
 		FA39645226A70F93003D2E46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA39645126A70F93003D2E46 /* Assets.xcassets */; };
 		FA39645526A70F93003D2E46 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA39645426A70F93003D2E46 /* Preview Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		2FC75EAE903AD7B81AC4227F /* Pods-BeTeacher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeTeacher.release.xcconfig"; path = "Target Support Files/Pods-BeTeacher/Pods-BeTeacher.release.xcconfig"; sourceTree = "<group>"; };
 		7AC21DA15FDCEE3D422189E5 /* Pods_BeTeacher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeTeacher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF68BFCB7AB9F26D7703278F /* Pods-BeTeacher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeTeacher.debug.xcconfig"; path = "Target Support Files/Pods-BeTeacher/Pods-BeTeacher.debug.xcconfig"; sourceTree = "<group>"; };
+		FA34153526A9E58400A6A100 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FA39644A26A70F92003D2E46 /* BeTeacher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeTeacher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA39644D26A70F92003D2E46 /* BeTeacherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeTeacherApp.swift; sourceTree = "<group>"; };
 		FA39645126A70F93003D2E46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				FA795E2826A7348D002C99C7 /* LessonListView.swift */,
 				FA795E2A26A73499002C99C7 /* LessonView.swift */,
 				FA795E2C26A73792002C99C7 /* FormView.swift */,
+				FA34153526A9E58400A6A100 /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				FA795E2926A7348D002C99C7 /* LessonListView.swift in Sources */,
 				FA795E2326A73436002C99C7 /* LessonListViewModel.swift in Sources */,
 				FA795E2126A7341C002C99C7 /* Lesson.swift in Sources */,
+				FA34153626A9E58400A6A100 /* ContentView.swift in Sources */,
 				FA795E2526A73450002C99C7 /* LessonViewModel.swift in Sources */,
 				FA795E2726A73465002C99C7 /* LessonRepository.swift in Sources */,
 				FA39644E26A70F92003D2E46 /* BeTeacherApp.swift in Sources */,

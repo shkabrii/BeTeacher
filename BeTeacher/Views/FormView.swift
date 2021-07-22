@@ -9,26 +9,35 @@ import SwiftUI
 
 struct FormView : View {
     @State private var student : String = ""
-    @State private var time : String = ""
-    @State private var duration : String = ""
     @State private var subject : String = ""
+    @State private var date = Date()
     
     public var didAddLesson: (_ lesson: Lesson) -> Void
+    
+    let dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .long
+        return formatter
+    }()
     
     var body : some View {
         NavigationView {
             VStack {
                 Form {
-                    TextField("Customer", text: $student)
+                    TextField("Student", text: $student)
                     TextField("Subject", text: $subject)
-                    TextField("Duration", text: $duration)
-                    TextField("Time", text: $time)
+                    Text("Enter date")
+                        .font(.title2)
+                    DatePicker("", selection: $date)
+                        .datePickerStyle(WheelDatePickerStyle())
+                        .frame(maxHeight: 400)
                 }
                 
                 Button("Plan a Lesson") {
-                    let lesson = Lesson(duration: duration, subject: subject, student: student, date: "20.08.2021", price: "30$", finished: false)
+                    let lesson = Lesson(subject: subject, student: student, date: date, price: "30$", finished: false)
+                    print(date)
                     didAddLesson(lesson)
-                }.disabled(student.isEmpty || time.isEmpty || duration.isEmpty || subject.isEmpty).padding()
+                }.disabled(student.isEmpty || subject.isEmpty).padding()
             }.navigationTitle("New Lesson")
         }
     }

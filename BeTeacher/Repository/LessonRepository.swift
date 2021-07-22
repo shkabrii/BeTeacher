@@ -28,6 +28,7 @@ final class LessonRepository: ObservableObject {
             self.lessons = snapshot?.documents.compactMap {
                 try? $0.data(as: Lesson.self)
             } ?? []
+            self.lessons = self.lessons.sorted(by: { $0.date < $1.date })
         }
     }
     

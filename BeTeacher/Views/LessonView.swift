@@ -11,7 +11,7 @@ struct LessonView: View {
     @State private var dragOffset = CGFloat.zero
     
     var lessonViewModel: LessonViewModel
-    
+    let dateFormatter = DateFormatter()
     
     var body: some View {
         RoundedRectangle(cornerRadius: 6)
@@ -28,9 +28,8 @@ struct LessonView: View {
                             Spacer()
                             Text(lessonViewModel.lesson.subject)
                             Spacer()
-                            Text(lessonViewModel.lesson.date)
-                            Spacer()
-                            Text(lessonViewModel.lesson.duration)
+                            Text(lessonViewModel.lesson.date, style: .date)
+                            Text(lessonViewModel.lesson.date, style: .time)
                         }
                         Spacer()
                     }

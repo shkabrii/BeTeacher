@@ -18,7 +18,7 @@ struct LessonListView: View {
             VStack {
                 Toggle(isOn: $showPassedLessons) {
                     Text("Show passed lessons")
-                }
+                }.padding()
                 List {
                     ForEach(lessonListViewModel.lessonViewModels.filter{
                         showPassedLessons == false ? $0.lesson.finished == showPassedLessons : true

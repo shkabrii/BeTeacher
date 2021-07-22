@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		80632569244CAF263BCF1A2D /* Pods_BeTeacher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC21DA15FDCEE3D422189E5 /* Pods_BeTeacher.framework */; };
 		FA34153626A9E58400A6A100 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA34153526A9E58400A6A100 /* ContentView.swift */; };
+		FA34153826A9EDB300A6A100 /* StudentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA34153726A9EDB300A6A100 /* StudentListView.swift */; };
+		FA34153A26A9EDF300A6A100 /* StudentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA34153926A9EDF300A6A100 /* StudentListViewModel.swift */; };
+		FA34153C26A9EE6E00A6A100 /* StudentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA34153B26A9EE6E00A6A100 /* StudentViewModel.swift */; };
+		FA34153E26A9EE9E00A6A100 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA34153D26A9EE9E00A6A100 /* Student.swift */; };
+		FA34154026A9EF2400A6A100 /* StudentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA34153F26A9EF2400A6A100 /* StudentRepository.swift */; };
+		FA34154226A9F08900A6A100 /* StudentFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA34154126A9F08900A6A100 /* StudentFormView.swift */; };
+		FA34154426A9F0A200A6A100 /* StudentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA34154326A9F0A200A6A100 /* StudentView.swift */; };
 		FA39644E26A70F92003D2E46 /* BeTeacherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA39644D26A70F92003D2E46 /* BeTeacherApp.swift */; };
 		FA39645226A70F93003D2E46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA39645126A70F93003D2E46 /* Assets.xcassets */; };
 		FA39645526A70F93003D2E46 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA39645426A70F93003D2E46 /* Preview Assets.xcassets */; };
@@ -27,6 +34,13 @@
 		7AC21DA15FDCEE3D422189E5 /* Pods_BeTeacher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeTeacher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF68BFCB7AB9F26D7703278F /* Pods-BeTeacher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeTeacher.debug.xcconfig"; path = "Target Support Files/Pods-BeTeacher/Pods-BeTeacher.debug.xcconfig"; sourceTree = "<group>"; };
 		FA34153526A9E58400A6A100 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FA34153726A9EDB300A6A100 /* StudentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListView.swift; sourceTree = "<group>"; };
+		FA34153926A9EDF300A6A100 /* StudentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListViewModel.swift; sourceTree = "<group>"; };
+		FA34153B26A9EE6E00A6A100 /* StudentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentViewModel.swift; sourceTree = "<group>"; };
+		FA34153D26A9EE9E00A6A100 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		FA34153F26A9EF2400A6A100 /* StudentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentRepository.swift; sourceTree = "<group>"; };
+		FA34154126A9F08900A6A100 /* StudentFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentFormView.swift; sourceTree = "<group>"; };
+		FA34154326A9F0A200A6A100 /* StudentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentView.swift; sourceTree = "<group>"; };
 		FA39644A26A70F92003D2E46 /* BeTeacher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeTeacher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA39644D26A70F92003D2E46 /* BeTeacherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeTeacherApp.swift; sourceTree = "<group>"; };
 		FA39645126A70F93003D2E46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -69,6 +83,26 @@
 				2FC75EAE903AD7B81AC4227F /* Pods-BeTeacher.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		FA34154526A9F39600A6A100 /* Lessons */ = {
+			isa = PBXGroup;
+			children = (
+				FA795E2826A7348D002C99C7 /* LessonListView.swift */,
+				FA795E2A26A73499002C99C7 /* LessonView.swift */,
+				FA795E2C26A73792002C99C7 /* FormView.swift */,
+			);
+			path = Lessons;
+			sourceTree = "<group>";
+		};
+		FA34154626A9F3A500A6A100 /* Students */ = {
+			isa = PBXGroup;
+			children = (
+				FA34153726A9EDB300A6A100 /* StudentListView.swift */,
+				FA34154126A9F08900A6A100 /* StudentFormView.swift */,
+				FA34154326A9F0A200A6A100 /* StudentView.swift */,
+			);
+			path = Students;
 			sourceTree = "<group>";
 		};
 		FA39644126A70F91003D2E46 = {
@@ -117,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				FA795E2026A7341C002C99C7 /* Lesson.swift */,
+				FA34153D26A9EE9E00A6A100 /* Student.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -126,6 +161,8 @@
 			children = (
 				FA795E2226A73436002C99C7 /* LessonListViewModel.swift */,
 				FA795E2426A73450002C99C7 /* LessonViewModel.swift */,
+				FA34153926A9EDF300A6A100 /* StudentListViewModel.swift */,
+				FA34153B26A9EE6E00A6A100 /* StudentViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -133,9 +170,8 @@
 		FA795E1E26A733BF002C99C7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FA795E2826A7348D002C99C7 /* LessonListView.swift */,
-				FA795E2A26A73499002C99C7 /* LessonView.swift */,
-				FA795E2C26A73792002C99C7 /* FormView.swift */,
+				FA34154626A9F3A500A6A100 /* Students */,
+				FA34154526A9F39600A6A100 /* Lessons */,
 				FA34153526A9E58400A6A100 /* ContentView.swift */,
 			);
 			path = Views;
@@ -145,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				FA795E2626A73465002C99C7 /* LessonRepository.swift */,
+				FA34153F26A9EF2400A6A100 /* StudentRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -263,14 +300,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA34153C26A9EE6E00A6A100 /* StudentViewModel.swift in Sources */,
 				FA795E2D26A73792002C99C7 /* FormView.swift in Sources */,
 				FA795E2B26A73499002C99C7 /* LessonView.swift in Sources */,
+				FA34154026A9EF2400A6A100 /* StudentRepository.swift in Sources */,
+				FA34153A26A9EDF300A6A100 /* StudentListViewModel.swift in Sources */,
+				FA34153826A9EDB300A6A100 /* StudentListView.swift in Sources */,
 				FA795E2926A7348D002C99C7 /* LessonListView.swift in Sources */,
 				FA795E2326A73436002C99C7 /* LessonListViewModel.swift in Sources */,
+				FA34153E26A9EE9E00A6A100 /* Student.swift in Sources */,
 				FA795E2126A7341C002C99C7 /* Lesson.swift in Sources */,
 				FA34153626A9E58400A6A100 /* ContentView.swift in Sources */,
+				FA34154226A9F08900A6A100 /* StudentFormView.swift in Sources */,
 				FA795E2526A73450002C99C7 /* LessonViewModel.swift in Sources */,
 				FA795E2726A73465002C99C7 /* LessonRepository.swift in Sources */,
+				FA34154426A9F0A200A6A100 /* StudentView.swift in Sources */,
 				FA39644E26A70F92003D2E46 /* BeTeacherApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

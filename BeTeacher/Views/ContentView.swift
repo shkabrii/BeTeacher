@@ -20,14 +20,14 @@ struct ContentView : View {
                     Image(systemName: "calendar.badge.clock")
                     Text("Lessons")
                 }
-            Text("Students")
+            StudentListView(studentListViewModel: StudentListViewModel())
                 .tabItem {
-                    Image(systemName: "graduationcap.fill")
+                    Image(systemName: "graduationcap")
                     Text("Students")
                 }
             Text("Finances")
                 .tabItem {
-                    Image(systemName: "banknote.fill")
+                    Image(systemName: "banknote")
                     Text("Finances")
                 }
         }
